@@ -1,0 +1,17 @@
+{
+  "name": "Nutri ChatBot",
+  "short_name": "NutriBot",
+  "description": "Assistente nutricional com IA para WhatsApp",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6B8E23",
+  "icons": [
+    {
+      "src": "/img/logoicon.webp",
+      "sizes": "any",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ]
+}
