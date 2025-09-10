@@ -375,7 +375,7 @@ const Funcionalidades = () => {
 
               <Button
                 as={RouterLink}
-                to="/demo"
+                to="/contato"
                 size="lg"
                 colorScheme="brand"
                 px={8}
@@ -384,7 +384,7 @@ const Funcionalidades = () => {
                 _hover={{ transform: 'translateY(-2px)' }}
                 boxShadow="lg"
               >
-                Experimente todas as funcionalidades
+                Custo acessível, benefício gigante: R$1,60/dia
               </Button>
             </MotionStack>
 
@@ -606,13 +606,13 @@ const Funcionalidades = () => {
               Pronto para experimentar todas essas funcionalidades?
             </Heading>
             <Text fontSize="xl" maxW="600px" mx="auto" opacity={0.9}>
-              Teste todas as funcionalidades do Nutri ChatBot por 7 dias gratuitamente 
-              e veja como elas podem transformar sua prática nutricional.
+              Veja como todas as funcionalidades do Nutri ChatBot 
+              podem transformar sua prática nutricional.
             </Text>
             <HStack spacing={4} justify="center" flexWrap="wrap">
               <Button
                 as={RouterLink}
-                to="/demo"
+                to="/contato"
                 size="lg"
                 bg="white"
                 color="brand.500"
@@ -625,7 +625,7 @@ const Funcionalidades = () => {
                 }}
                 boxShadow="lg"
               >
-                Comece seu teste gratuito
+                Custo acessível, benefício gigante: R$1,60/dia
               </Button>
               <Button
                 as="a"
@@ -651,7 +651,7 @@ const Funcionalidades = () => {
 
             {/* Guarantee */}
             <Text fontSize="sm" opacity={0.8} mt={4}>
-              ✅ Acesso completo por 7 dias • Sem cartão de crédito • Suporte incluído
+              ✅ Investimento baixo • Sem compromisso • Suporte incluído
             </Text>
           </MotionStack>
         </Container>

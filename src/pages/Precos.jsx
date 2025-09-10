@@ -147,7 +147,7 @@ const PricingCard = ({
             {/* CTA */}
             <Button
               as={RouterLink}
-              to="/demo"
+              to="/contato"
               colorScheme={isPopular ? "brand" : "gray"}
               variant={ctaVariant}
               size="lg"
@@ -188,7 +188,7 @@ const ROICalculator = () => {
   const tempoEconomizado = consultasNum * 40; // 40min por consulta
   const horasEconomizadas = Math.round(tempoEconomizado / 60 * 10) / 10;
   const receitaExtra = Math.round(horasEconomizadas * valorNum);
-  const investimento = 99; // Preço do produto
+  const investimento = 49; // Preço do produto
   const lucroLiquido = receitaExtra - investimento;
   const roi = investimento > 0 ? Math.round((lucroLiquido / investimento) * 100) : 0;
 
@@ -325,24 +325,8 @@ const Precos = () => {
 
   const plans = [
     {
-      title: "Teste Gratuito",
-      price: "R$ 0",
-      period: "por 7 dias",
-      description: "Experimente todas as funcionalidades sem compromisso",
-      features: [
-        "Acesso completo ao chatbot por 7 dias",
-        "Até 50 interações com pacientes",
-        "Suporte via WhatsApp",
-        "Todos os recursos incluídos",
-        "Sem cartão de crédito necessário",
-        "Cancelamento automático"
-      ],
-      ctaText: "Comece grátis agora",
-      ctaVariant: "outline"
-    },
-    {
       title: "Nutri ChatBot Pro",
-      price: "R$ 99",
+      price: "R$ 49",
       period: "por mês",
       description: "Solução completa para nutricionistas profissionais",
       features: [
@@ -365,20 +349,22 @@ const Precos = () => {
     },
     {
       title: "Nutri ChatBot Enterprise",
-      price: "Consulte",
-      period: "preço",
+      price: "R$ 99,99",
+      period: "por mês",
       description: "Para clínicas e consultórios com múltiplos profissionais",
       features: [
         "Tudo do plano Pro incluído",
-        "Múltiplos nutricionistas",
-        "Dashboard administrativo",
+        "Múltiplos nutricionistas na mesma conta",
+        "Dashboard administrativo completo",
         "API para integrações customizadas",
         "White label (sua marca)",
         "Treinamento personalizado",
         "Suporte dedicado 24/7",
         "SLA garantido 99.9%",
         "Customizações exclusivas",
-        "Consultoria especializada"
+        "Consultoria especializada",
+        "Anuidade: R$ 1.199,88 (desconto de 12%)",
+        "Parcelamento em até 12x no cartão"
       ],
       ctaText: "Falar com consultor",
       ctaVariant: "outline"
@@ -387,12 +373,12 @@ const Precos = () => {
 
   const faqItems = [
     {
-      question: "Como funciona o período de teste gratuito?",
-      answer: "Você tem 7 dias para testar todas as funcionalidades do Nutri ChatBot sem qualquer custo. Não é necessário cartão de crédito e o cancelamento é automático ao final do período."
+      question: "Como funciona a demonstração?",
+      answer: "Ao solicitar a demonstração, você receberá um link direto do WhatsApp para testar, na prática, o atendimento de pré-consulta, triagem, avaliação e inquérito alimentar realizado pelo Nutri ChatBot. Além disso, enviamos um vídeo explicativo mostrando o passo a passo de uso e como acessar todas as funcionalidades do CRM Dashboard – Painel do Nutricionista, onde ficam organizadas as informações dos seus pacientes."
     },
     {
-      question: "Posso cancelar minha assinatura a qualquer momento?",
-      answer: "Sim! Você pode cancelar sua assinatura a qualquer momento sem multa ou taxa adicional. O acesso permanece ativo até o final do período já pago."
+      question: "Como funciona o cancelamento?",
+      answer: "Você pode solicitar o cancelamento a qualquer momento. Em caso de cancelamento, é feita a restituição proporcional dos meses não utilizados, descontando uma taxa de rescisão de 30%, referente ao tempo laboral (pró-labore) de atendimento e à execução dos serviços já realizados."
     },
     {
       question: "Os dados dos meus pacientes ficam seguros?",
@@ -400,24 +386,28 @@ const Precos = () => {
     },
     {
       question: "Preciso de conhecimento técnico para usar?",
-      answer: "Não! O Nutri ChatBot foi desenvolvido para ser extremamente simples. Em 5 minutos você já está atendendo pacientes. Oferecemos suporte completo para configuração."
+      answer: "Não! O Nutri ChatBot foi desenvolvido para ser extremamente simples. Em 5 minutos você já está atendendo pacientes. Oferecemos suporte completo para configuração e um vídeo explicativo detalhado."
     },
     {
-      question: "Como é calculado o ROI de 300%?",
-      answer: "Baseado na economia de 40 minutos por consulta. Um nutricionista com 20 consultas/mês economiza 13h, que pode converter em 6+ consultas extras, gerando receita adicional muito superior ao investimento."
+      question: "Como é calculado o ROI de 500%?",
+      answer: "Baseado na economia de 40 minutos por consulta. Um nutricionista com 20 consultas/mês economiza 13h, que pode converter em 6+ consultas extras, gerando receita adicional de R$ 900+, contra investimento de R$ 49 = ROI de 500%+."
+    },
+    {
+      question: "Como funciona o parcelamento do plano Enterprise?",
+      answer: "O plano Enterprise pode ser pago mensalmente por R$ 99,99, anualmente por R$ 1.199,88 (12% de desconto) ou parcelado em até 12x no cartão com juros calculados automaticamente conforme o número de parcelas escolhidas."
     },
     {
       question: "Posso integrar com minha agenda atual?",
-      answer: "Sim! O Nutri ChatBot se integra com as principais ferramentas de agendamento e pode exportar dados para qualquer sistema que você já utiliza."
+      answer: "Sim! O Nutri ChatBot se integra com as principais ferramentas de agendamento e pode exportar dados para qualquer sistema que você já utiliza. Além disso, todas as informações ficam organizadas no CRM Dashboard do Nutricionista."
     }
   ];
 
   return (
     <>
       <SEO 
-        title="Preços - Nutri ChatBot | Planos a partir de R$ 99/mês"
-        description="Conheça os planos do Nutri ChatBot: teste gratuito 7 dias, plano profissional R$ 99/mês com ROI 300%. Transforme sua prática nutricional hoje!"
-        keywords="preço chatbot nutricionista, plano nutri chatbot, investimento nutrição automação, ROI consultório nutricional, teste grátis"
+        title="Preços - Nutri ChatBot | Planos a partir de R$ 49/mês"
+        description="Conheça os planos do Nutri ChatBot: plano profissional R$ 49/mês e Enterprise R$ 99,99/mês com ROI comprovado. Transforme sua prática nutricional hoje!"
+        keywords="preço chatbot nutricionista, plano nutri chatbot, investimento nutrição automação, ROI consultório nutricional"
         url="/precos"
       />
 
@@ -438,7 +428,7 @@ const Precos = () => {
           >
             <VStack spacing={4}>
               <Badge colorScheme="brand" px={4} py={2} borderRadius="full">
-                ROI COMPROVADO DE 300%
+                ROI COMPROVADO DE 500%
               </Badge>
               <Heading
                 as="h1"
@@ -450,7 +440,7 @@ const Precos = () => {
               >
                 Invista{' '}
                 <Text as="span" color="brand.500">
-                  R$ 99/mês
+                  R$ 49/mês
                 </Text>{' '}
                 e ganhe{' '}
                 <Text as="span" color="tech.500">
@@ -466,7 +456,7 @@ const Precos = () => {
                 lineHeight="1.6"
               >
                 Com o Nutri ChatBot, você economiza 40 minutos por consulta e pode 
-                atender 6+ pacientes extras por mês. Faça as contas!
+                atender 6+ pacientes extras por mês. O investimento se paga sozinho!
               </Text>
             </VStack>
 
@@ -474,7 +464,7 @@ const Precos = () => {
             <SimpleGrid columns={{ base: 2, md: 4 }} spacing={8} py={6}>
               <VStack spacing={2}>
                 <Text fontSize="3xl" fontWeight="bold" color="brand.500">
-                  R$ 99
+                  R$ 49
                 </Text>
                 <Text fontSize="sm" color="gray.600" textAlign="center">
                   Investimento mensal
@@ -498,27 +488,13 @@ const Precos = () => {
               </VStack>
               <VStack spacing={2}>
                 <Text fontSize="3xl" fontWeight="bold" color="purple.500">
-                  300%
+                  500%
                 </Text>
                 <Text fontSize="sm" color="gray.600" textAlign="center">
                   ROI mensal
                 </Text>
               </VStack>
             </SimpleGrid>
-
-            <Button
-              as={RouterLink}
-              to="/demo"
-              size="xl"
-              colorScheme="brand"
-              px={10}
-              py={8}
-              fontSize="xl"
-              _hover={{ transform: 'translateY(-2px)' }}
-              boxShadow="2xl"
-            >
-              Comece seu teste gratuito agora
-            </Button>
           </MotionStack>
         </Container>
       </Box>
@@ -545,7 +521,7 @@ const Precos = () => {
             </MotionStack>
 
             {/* Plans Grid */}
-            <SimpleGrid columns={{ base: 1, lg: 3 }} spacing={8} w="full">
+            <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={8} w="full" justifyItems="center">
               {plans.map((plan, index) => (
                 <PricingCard
                   key={index}
@@ -564,9 +540,54 @@ const Precos = () => {
           </VStack>
         </Container>
       </Box>
+      
+      {/* Enterprise Payment Details */}
+      <Box py={10} bg="gray.50">
+        <Container maxW="1200px">
+          <MotionBox
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            w="full"
+            maxW="600px"
+            mx="auto"
+            bg="gradient.500"
+            bgGradient="linear(135deg, purple.500 0%, blue.500 100%)"
+            p={6}
+            borderRadius="xl"
+            color="white"
+            textAlign="center"
+          >
+            <VStack spacing={4}>
+              <Heading size="lg">Plano Enterprise - Opções de Pagamento</Heading>
+              <SimpleGrid columns={{ base: 1, md: 3 }} spacing={4} w="full">
+                <VStack spacing={2}>
+                  <Text fontSize="sm" opacity={0.9}>Mensal</Text>
+                  <Text fontSize="xl" fontWeight="bold">R$ 99,99</Text>
+                  <Text fontSize="xs" opacity={0.8}>por mês</Text>
+                </VStack>
+                <VStack spacing={2}>
+                  <Text fontSize="sm" opacity={0.9}>Anual À vista</Text>
+                  <Text fontSize="xl" fontWeight="bold">R$ 1.199,88</Text>
+                  <Text fontSize="xs" opacity={0.8} color="green.200">Economia de 12%</Text>
+                </VStack>
+                <VStack spacing={2}>
+                  <Text fontSize="sm" opacity={0.9}>Parcelamento</Text>
+                  <Text fontSize="xl" fontWeight="bold">Até 12x</Text>
+                  <Text fontSize="xs" opacity={0.8}>no cartão</Text>
+                </VStack>
+              </SimpleGrid>
+              <Text fontSize="sm" opacity={0.9}>
+                💳 Juros calculados automaticamente conforme número de parcelas escolhidas
+              </Text>
+            </VStack>
+          </MotionBox>
+        </Container>
+      </Box>
 
       {/* ROI Calculator Section */}
-      <Box py={20} bg="gray.50">
+      <Box py={20} bg="white">
         <Container maxW="1200px">
           <SimpleGrid columns={{ base: 1, lg: 2 }} spacing={16} alignItems="center">
             {/* Left Content */}
@@ -601,7 +622,7 @@ const Precos = () => {
                 <HStack>
                   <Icon as={FaRocket} color="brand.500" />
                   <Text fontSize="sm">
-                    <strong>ROI médio de 300%</strong> comprovado pelos usuários
+                    <strong>ROI médio de 500%</strong> comprovado pelos usuários
                   </Text>
                 </HStack>
               </VStack>
@@ -614,7 +635,7 @@ const Precos = () => {
       </Box>
 
       {/* Guarantees Section */}
-      <Box py={20} bg="white">
+      <Box py={20} bg="gray.50">
         <Container maxW="1200px">
           <VStack spacing={16}>
             <MotionStack
@@ -637,8 +658,8 @@ const Precos = () => {
               {[
                 {
                   icon: FaShieldAlt,
-                  title: "7 dias grátis",
-                  description: "Teste completo sem custo ou compromisso"
+                  title: "Custo baixíssimo",
+                  description: "R$ 1,60/dia - menos que um café"
                 },
                 {
                   icon: FaHeart,
@@ -664,8 +685,9 @@ const Precos = () => {
                   viewport={{ once: true }}
                   textAlign="center"
                   p={6}
-                  bg="gray.50"
+                  bg="white"
                   borderRadius="xl"
+                  boxShadow="md"
                 >
                   <VStack spacing={4}>
                     <Icon
@@ -692,7 +714,7 @@ const Precos = () => {
       </Box>
 
       {/* FAQ Section */}
-      <Box py={20} bg="gray.50">
+      <Box py={20} bg="white">
         <Container maxW="1200px">
           <VStack spacing={12}>
             <MotionStack
@@ -723,10 +745,10 @@ const Precos = () => {
                 {faqItems.map((item, index) => (
                   <AccordionItem key={index} border="none" mb={4}>
                     <AccordionButton
-                      bg="white"
+                      bg="gray.50"
                       p={6}
                       borderRadius="lg"
-                      _hover={{ bg: 'gray.50' }}
+                      _hover={{ bg: 'gray.100' }}
                       border="1px"
                       borderColor="gray.100"
                     >
@@ -737,7 +759,7 @@ const Precos = () => {
                       </Box>
                       <AccordionIcon />
                     </AccordionButton>
-                    <AccordionPanel bg="white" px={6} pb={6} borderRadius="lg">
+                    <AccordionPanel bg="gray.50" px={6} pb={6} borderRadius="lg">
                       <Text color="gray.600" lineHeight="1.6">
                         {item.answer}
                       </Text>
@@ -769,7 +791,7 @@ const Precos = () => {
               Pronto para multiplicar sua receita?
             </Heading>
             <Text fontSize="xl" maxW="600px" mx="auto" opacity={0.9}>
-              Comece seu teste gratuito agora e veja na prática como o Nutri ChatBot 
+              Comece hoje mesmo e veja na prática como o Nutri ChatBot 
               pode transformar sua prática nutricional.
             </Text>
             
@@ -777,7 +799,7 @@ const Precos = () => {
               <HStack spacing={4} justify="center" flexWrap="wrap">
                 <Button
                   as={RouterLink}
-                  to="/demo"
+                  to="/contato"
                   size="xl"
                   bg="white"
                   color="brand.500"
@@ -790,7 +812,7 @@ const Precos = () => {
                   }}
                   boxShadow="2xl"
                 >
-                  Teste grátis por 7 dias
+                  Custo acessível, benefício gigante: R$1,60/dia
                 </Button>
                 <Button
                   as="a"
@@ -815,7 +837,7 @@ const Precos = () => {
               </HStack>
               
               <Text fontSize="sm" opacity={0.8} textAlign="center">
-                ✅ Sem cartão de crédito • ✅ Cancelamento automático • ✅ Suporte incluído
+                ✅ Investimento mínimo • ✅ Cancele quando quiser • ✅ Suporte incluído
               </Text>
             </VStack>
           </MotionStack>

@@ -5,7 +5,6 @@ import About from './pages/About';
 import Funcionalidades from './pages/Funcionalidades';
 import Beneficios from './pages/Beneficios';
 import Precos from './pages/Precos';
-import Demo from './pages/Demo';
 import Contato from './pages/Contato';
 
 // SEO Schema Components
@@ -30,7 +29,6 @@ function App() {
           <Route path="/funcionalidades" element={<Funcionalidades />} />
           <Route path="/beneficios" element={<Beneficios />} />
           <Route path="/precos" element={<Precos />} />
-          <Route path="/demo" element={<Demo />} />
           <Route path="/contato" element={<Contato />} />
         </Routes>
       </Layout>

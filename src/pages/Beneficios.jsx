@@ -365,7 +365,7 @@ const Beneficios = () => {
 
               <Button
                 as={RouterLink}
-                to="/demo"
+                to="/contato"
                 size="lg"
                 colorScheme="brand"
                 px={8}
@@ -374,7 +374,7 @@ const Beneficios = () => {
                 _hover={{ transform: 'translateY(-2px)' }}
                 boxShadow="lg"
               >
-                Comprove os benefícios gratuitamente
+                Custo acessível, benefício gigante: R$1,60/dia
               </Button>
             </MotionStack>
 
@@ -723,13 +723,13 @@ const Beneficios = () => {
               Pronto para conquistar esses benefícios?
             </Heading>
             <Text fontSize="xl" maxW="600px" mx="auto" opacity={0.9}>
-              Teste o Nutri ChatBot por 7 dias gratuitamente e comprove 
+              Comece hoje mesmo com o Nutri ChatBot e comprove 
               todos esses benefícios na sua prática.
             </Text>
             <HStack spacing={4} justify="center" flexWrap="wrap">
               <Button
                 as={RouterLink}
-                to="/demo"
+                to="/contato"
                 size="lg"
                 bg="white"
                 color="brand.500"
@@ -742,7 +742,7 @@ const Beneficios = () => {
                 }}
                 boxShadow="lg"
               >
-                Comece seu teste gratuito
+                Custo acessível, benefício gigante: R$1,60/dia
               </Button>
               <Button
                 as="a"
@@ -768,7 +768,7 @@ const Beneficios = () => {
 
             {/* Guarantee */}
             <Text fontSize="sm" opacity={0.8} mt={4}>
-              ✅ 7 dias grátis • ROI garantido • Suporte completo incluído
+              ✅ Investimento baixo • ROI garantido • Suporte completo incluído
             </Text>
           </MotionStack>
         </Container>

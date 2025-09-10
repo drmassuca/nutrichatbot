@@ -64,7 +64,6 @@ const Header = () => {
     { label: 'Funcionalidades', to: '/funcionalidades' },
     { label: 'Benefícios', to: '/beneficios' },
     { label: 'Preços', to: '/precos' },
-    { label: 'Demo', to: '/demo' },
     { label: 'Contato', to: '/contato' },
   ];
 
@@ -92,7 +91,7 @@ const Header = () => {
               gap={{ base: 2, sm: 3 }}
             >
               <Image
-                src="/img/logoicon.webp"
+                src="/images/logoicon.webp"
                 alt="Nutri ChatBot"
                 h="40px"
                 w="auto"
@@ -159,13 +158,13 @@ const Header = () => {
             </Button>
             <Button
               as={RouterLink}
-              to="/demo"
+              to="/contato"
               variant="solid"
               size="sm"
               colorScheme="brand"
               _hover={{ transform: 'translateY(-1px)' }}
             >
-              Teste Grátis
+              Solicitar Demo
             </Button>
           </HStack>
 
@@ -196,7 +195,7 @@ const Header = () => {
             <Box p={4} borderBottom="1px" borderColor="gray.100">
               <Flex alignItems="center" gap={3} justify="center">
                 <Image
-                  src="/img/logoicon.webp"
+                  src="/images/logoicon.webp"
                   alt="Nutri ChatBot"
                   h="32px"
                   w="auto"
@@ -271,14 +270,14 @@ const Header = () => {
                 </Button>
                 <Button
                   as={RouterLink}
-                  to="/demo"
+                  to="/contato"
                   variant="solid"
                   colorScheme="brand"
                   w="full"
                   size="lg"
                   onClick={onClose}
                 >
-                  Teste Grátis 7 Dias
+                  Solicitar Demo
                 </Button>
               </VStack>
             </VStack>

@@ -145,7 +145,7 @@ const Home = () => {
               <HStack spacing={4} flexWrap="wrap">
                 <Button
                   as={RouterLink}
-                  to="/demo"
+                  to="/contato"
                   size="lg"
                   colorScheme="brand"
                   px={8}
@@ -154,7 +154,7 @@ const Home = () => {
                   _hover={{ transform: 'translateY(-2px)' }}
                   boxShadow="lg"
                 >
-                  Experimente grátis por 7 dias
+                  Custo acessível, benefício gigante: R$1,60/dia
                 </Button>
                 <Button
                   as="a"
@@ -194,10 +194,10 @@ const Home = () => {
                 </VStack>
                 <VStack spacing={1}>
                   <Text fontSize="2xl" fontWeight="bold" color="brand.500">
-                    7 dias
+                    500%
                   </Text>
                   <Text fontSize="sm" color="gray.600" textAlign="center">
-                    Teste gratuito
+                    ROI médio
                   </Text>
                 </VStack>
               </HStack>
@@ -212,13 +212,12 @@ const Home = () => {
               justifyContent="center"
             >
               <Image
-                src="/img/mockup.webp"
+                src="/images/mockup.webp"
                 alt="Nutri ChatBot WhatsApp Interface"
                 maxW="400px"
                 w="full"
                 h="auto"
-                borderRadius="20px"
-                boxShadow="2xl"
+                objectFit="contain"
                 fallback={
                   <Box
                     w="300px"
@@ -390,7 +389,7 @@ const Home = () => {
             <HStack spacing={4} justify="center" flexWrap="wrap">
               <Button
                 as={RouterLink}
-                to="/demo"
+                to="/contato"
                 size="lg"
                 bg="white"
                 color="brand.500"
@@ -403,7 +402,7 @@ const Home = () => {
                 }}
                 boxShadow="lg"
               >
-                Comece seu teste gratuito
+                Custo acessível, benefício gigante: R$1,60/dia
               </Button>
               <Button
                 as={RouterLink}
@@ -426,7 +425,7 @@ const Home = () => {
 
             {/* Guarantee */}
             <Text fontSize="sm" opacity={0.8} mt={4}>
-              ✅ Teste gratuito por 7 dias • Sem cartão de crédito • Cancele quando quiser
+              ✅ Investimento baixo • Sem compromisso • Cancele quando quiser
             </Text>
           </MotionStack>
         </Container>

@@ -872,7 +872,7 @@ const About = () => {
             <HStack spacing={4} justify="center" flexWrap="wrap">
               <Button
                 as={RouterLink}
-                to="/demo"
+                to="/contato"
                 size="lg"
                 bg="white"
                 color="brand.500"
@@ -885,7 +885,7 @@ const About = () => {
                 }}
                 boxShadow="lg"
               >
-                Teste Grátis por 7 Dias
+                Custo acessível, benefício gigante: R$1,60/dia
               </Button>
               <Button
                 as="a"
@@ -914,7 +914,7 @@ const About = () => {
               <HStack spacing={2}>
                 <Icon as={FaCheckCircle} w={5} h={5} />
                 <Text fontSize="sm" opacity={0.9}>
-                  Teste gratuito por 7 dias
+                  Investimento baixo diário
                 </Text>
               </HStack>
               <HStack spacing={2}>

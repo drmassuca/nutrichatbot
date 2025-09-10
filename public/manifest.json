@@ -8,10 +8,22 @@
   "theme_color": "#6B8E23",
   "icons": [
     {
-      "src": "/img/logoicon.webp",
-      "sizes": "any",
+      "src": "/images/logoicon.webp",
+      "sizes": "192x192",
       "type": "image/webp",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logoicon.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/logoicon.webp",
+      "sizes": "192x192",
+      "type": "image/webp",
+      "purpose": "maskable"
     }
   ]
 }

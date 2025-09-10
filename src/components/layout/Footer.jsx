@@ -65,7 +65,7 @@ const Footer = () => {
           <Stack spacing={6}>
             <Box>
               <Image
-                src="/img/logoicon.webp"
+                src="/images/logoicon.webp"
                 alt="Nutri ChatBot"
                 h="40px"
                 w="auto"
@@ -177,7 +177,7 @@ const Footer = () => {
             gap={{ base: 2, md: 0 }}
           >
             <Text fontSize="sm" color="gray.600">
-              © 2024 Nutri ChatBot. Todos os direitos reservados.
+              © 2025 Futuro Local. Todos os direitos reservados.
             </Text>
             <HStack spacing={4} fontSize="sm">
               <Text color="gray.500">
