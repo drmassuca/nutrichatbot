@@ -397,8 +397,8 @@ const Funcionalidades = () => {
               justifyContent="center"
             >
               <Image
-                src="/img/mockup.webp"
-                alt="Interface do Nutri ChatBot mostrando funcionalidades"
+                src="/images/funcionalidades.webp"
+                alt="Funcionalidades do Nutri ChatBot para nutricionistas"
                 maxW="400px"
                 w="full"
                 h="auto"
