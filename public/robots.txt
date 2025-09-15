@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nutrichatbot.com.br/sitemap.xml
+
+# Disallow admin areas (if any in the future)
+# Disallow: /admin/
+
+# Allow all image files
+Allow: /images/
+Allow: /icons/
+
+# Cache policy hint for crawlers
+Crawl-delay: 1

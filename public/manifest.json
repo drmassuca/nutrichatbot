@@ -1,28 +1,40 @@
 {
-  "name": "Nutri ChatBot",
-  "short_name": "NutriBot",
-  "description": "Assistente nutricional com IA para WhatsApp",
+  "name": "Nutri ChatBot - Assistente Nutricional com IA",
+  "short_name": "Nutri ChatBot",
+  "description": "Assistente nutricional com IA para WhatsApp que automatiza triagem de pacientes",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#6B8E23",
   "icons": [
     {
-      "src": "/images/logoicon.webp",
-      "sizes": "192x192",
-      "type": "image/webp",
+      "src": "/images/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/images/logoicon.webp",
+      "src": "/images/apple-touch-icon.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
       "sizes": "512x512",
-      "type": "image/webp",
+      "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/images/logoicon.webp",
+      "src": "/icons/icon-192x192.png",
       "sizes": "192x192",
-      "type": "image/webp",
+      "type": "image/png",
       "purpose": "maskable"
     }
   ]
