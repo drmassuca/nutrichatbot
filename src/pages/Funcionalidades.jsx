@@ -233,7 +233,6 @@ const Funcionalidades = () => {
       description: "Monitoramento contínuo da rotina alimentar do paciente com notificações e lembretes personalizados.",
       features: [
         "Diário alimentar automático",
-        "Lembretes de refeições",
         "Controle de hidratação",
         "Notificações de progresso"
       ]

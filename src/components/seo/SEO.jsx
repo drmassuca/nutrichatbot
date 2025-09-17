@@ -15,6 +15,7 @@ const SEO = ({
   const siteUrl = 'https://nutrichatbot.com.br';
   const fullUrl = url ? `${siteUrl}${url}` : siteUrl;
   const defaultImage = `${siteUrl}/images/og-image.jpg`;
+  const absoluteImage = image ? (image.startsWith('http') ? image : `${siteUrl}${image}`) : defaultImage;
   
   return (
     <Helmet>
@@ -27,7 +28,10 @@ const SEO = ({
       {/* Open Graph */}
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image || defaultImage} />
+      <meta property="og:image" content={absoluteImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:type" content="image/jpeg" />
       <meta property="og:url" content={fullUrl} />
       <meta property="og:type" content={type} />
       <meta property="og:site_name" content={siteTitle} />
@@ -50,7 +54,7 @@ const SEO = ({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={image || defaultImage} />
+      <meta name="twitter:image" content={absoluteImage} />
       
       {/* Additional Meta Tags */}
       <meta name="robots" content="index, follow" />
