@@ -1,55 +1,157 @@
-# Nutri ChatBot
+# Nutri ChatBot - Site Institucional
 
-Sistema inteligente para gestão de atendimentos, triagem pré-consulta e organização de dados nutricionais.
+Assistente nutricional com IA para WhatsApp que automatiza triagem de pacientes e otimiza consultas nutricionais.
 
-## Visão Geral
+## 🚀 Tecnologias
 
-O Nutri ChatBot é uma solução completa que permite aos nutricionistas ter uma versão digital disponível 24h no WhatsApp, realizando triagem automatizada de pacientes e organizando dados para consultas mais eficientes.
+- **React 18.2.0** - Biblioteca principal
+- **Vite 4.5.0** - Build tool e dev server
+- **Chakra UI 2.8.2** - Sistema de componentes mobile-first
+- **React Router Dom 6.23.1** - Roteamento SPA
+- **Framer Motion** - Animações e transições
+- **React Helmet Async** - SEO e meta tags
+- **React Icons** - Biblioteca de ícones
 
-## Principais Funcionalidades
+## 🎨 Design System
 
-### Para o Paciente
-- Acesso via WhatsApp 24h
-- Cadastro completo automatizado
-- Avaliação nutricional e IMC pré-consulta
-- Anamnese alimentar e clínica
-- Recordatório alimentar habitual (24h)
-- QFA (Questionário de Frequência Alimentar)
-- Diário Alimentar de 7 dias pré-consulta
+### Cores Principais (baseadas no logo)
+- **Verde Nutri**: `#6B8E23` - Nutrição/natureza
+- **Azul Chat**: `#4A90E2` - Tecnologia/comunicação
+- **Fundo**: Branco `#FFFFFF`
 
-### Para o Nutricionista
-- Dashboard personalizado com dados organizados
-- Sistema CRM com login e senha
-- Relatórios otimizados para consulta
-- Prontuário digital automatizado
-- Economia de até 40 minutos por consulta
-- Integração com plataformas de agenda
+### Tipografia
+- **Fonte**: Inter (Google Fonts)
+- **Pesos**: 300, 400, 500, 600, 700
 
-## Diferenciais Técnicos
+## 📁 Estrutura do Projeto
 
-1. **IA Treinada**: Baseada em diretrizes nutricionais oficiais (BRASIL, CFN, CIÊNCIA DA NUTRIÇÃO)
-2. **Integração CRM**: Compatível com sistemas existentes
-3. **100% Responsivo**: Acessível via smartphone
-4. **Personalização**: Cada nutricionista pode customizar perguntas e identidade visual
+```
+src/
+├── components/
+│   ├── layout/           # Header, Footer, Layout
+│   └── seo/              # SEO e Schema.org
+├── pages/                # Páginas principais
+├── styles/               # Theme e estilos globais
+└── utils/                # Utilitários e Web Vitals
+```
 
-## Público-Alvo
+## 🛠 Instalação e Execução
 
-- **Nutricionistas Autônomos**: Consultórios particulares e atendimento online
-- **Clínicas**: Ambientes com múltiplos nutricionistas e alto volume
-- **e-Nutrição**: Totalmente compatível com resoluções do CFN
+### Pré-requisitos
+- Node.js 18+ 
+- npm ou yarn
 
-## Fluxo de Trabalho
+### Comandos
 
-1. **Link enviado ao paciente** (WhatsApp, Instagram, outras mídias)
-2. **Paciente interage com NutriBot** - coleta e organização automática de dados
-3. **Nutricionista acessa prontuário** - consulta otimizada, detalhada e personalizada
+```bash
+# Instalar dependências
+npm install
 
-## Investimento
+# Executar em desenvolvimento
+npm run dev
 
-- **Plano Anual**: R$ 99/mês
-- **Custo/dia**: Aproximadamente R$ 3,00
-- **ROI**: Economia de tempo e melhoria na qualidade do atendimento
+# Build para produção
+npm run build
 
-## Website
+# Preview da build
+npm run preview
 
-[www.nutrichatbot.com.br](http://www.nutrichatbot.com.br)
+# Linting
+npm run lint
+
+# Formatação
+npm run format
+```
+
+## 📱 Funcionalidades
+
+### SEO Avançado
+- ✅ Schema.org structured data
+- ✅ Open Graph meta tags
+- ✅ Twitter Cards
+- ✅ Sitemap automático
+- ✅ Meta tags otimizadas
+
+### Performance
+- ✅ Mobile-first responsive
+- ✅ Core Web Vitals otimizado
+- ✅ Lazy loading de imagens
+- ✅ PWA configurado
+- ✅ Code splitting automático
+
+### Componentes
+- ✅ Header responsivo com menu mobile
+- ✅ Footer completo com links
+- ✅ Cards de funcionalidades
+- ✅ Botões touch-friendly
+- ✅ Animações com Framer Motion
+
+## 📄 Páginas
+
+1. **Homepage (/)** - Hero + funcionalidades + CTAs
+2. **Sobre (/sobre)** - Explicação do produto
+3. **Funcionalidades (/funcionalidades)** - Lista detalhada
+4. **Benefícios (/beneficios)** - Vantagens para nutricionistas
+5. **Preços (/precos)** - Plano R$ 49,99/mês
+6. **Demo (/demo)** - Teste gratuito
+7. **Contato (/contato)** - Formulário e WhatsApp
+
+## 🎯 CTAs Principais
+
+- **"Experimente grátis por 7 dias"** - Conversão principal
+- **"Agende uma demonstração"** - Lead nurturing
+- **WhatsApp direto** - Contato imediato
+
+## 🔧 Configurações
+
+### Favicon e PWA
+- Todas as configurações de favicon estão no `index.html`
+- PWA manifest configurado no `vite.config.js`
+- Ícones devem ser colocados em `public/icons/`
+
+### Theme Chakra UI
+- Cores da marca configuradas em `src/styles/theme.js`
+- Componentes customizados (Button, Card, Heading)
+- Breakpoints mobile-first
+
+### Web Vitals
+- Tracking configurado em `src/utils/webVitals.js`
+- Métricas enviadas para analytics
+
+## 🌐 Deploy
+
+### Recomendado: Vercel
+```bash
+# Conectar repositório no Vercel
+# Build automático a cada push
+# Domínio personalizado
+```
+
+### Alternativas:
+- Netlify
+- GitHub Pages
+- AWS S3 + CloudFront
+
+## 📊 Métricas Alvo
+
+- **Lighthouse Score**: >90
+- **First Contentful Paint**: <2s
+- **Largest Contentful Paint**: <4s
+- **Cumulative Layout Shift**: <0.1
+
+## 🔐 Conformidade
+
+- **LGPD**: Política de privacidade
+- **CFN**: Compatível com Resolução nº 680/2021
+- **Acessibilidade**: WCAG AA
+- **SEO**: Schema.org + meta tags completas
+
+## 📞 Suporte
+
+- **WhatsApp**: [Configurar número]
+- **Email**: [Configurar email]
+- **Documentação**: Pasta `doc/` com especificações completas
+
+---
+
+**Desenvolvido com ❤️ para nutricionistas que buscam inovação**

@@ -2,46 +2,46 @@ import { extendTheme } from '@chakra-ui/react';
 
 const theme = extendTheme({
   colors: {
-    // Cores principais da marca (baseadas no logo)
+    // Cores principais da marca (melhoradas para contraste)
     brand: {
       50: '#f0f9f0',
       100: '#d4ecd4',
       200: '#b8e0b8',
       300: '#9cd49c',
       400: '#80c880',
-      500: '#6B8E23',    // Verde principal do logo
-      600: '#557a1c',
-      700: '#3f5b15',
-      800: '#293c0e',
-      900: '#131e07',
+      500: '#5A7A1A',    // Verde mais escuro para melhor contraste
+      600: '#4A6515',    // Escurecido
+      700: '#3A5010',    // Escurecido
+      800: '#2A3B0B',    // Escurecido
+      900: '#1A2606',    // Escurecido
     },
     
-    // Azul para tecnologia/chat (do logo)
+    // Azul para tecnologia/chat (melhorado para contraste)
     tech: {
       50: '#e6f3ff',
       100: '#b3d9ff',
       200: '#80c0ff',
       300: '#4da6ff',
       400: '#1a8cff',
-      500: '#4A90E2',    // Azul principal do logo
-      600: '#3b73b5',
-      700: '#2c5688',
-      800: '#1d395a',
-      900: '#0e1c2d',
+      500: '#2E5A8A',    // Azul mais escuro para melhor contraste
+      600: '#1E4A7A',    // Escurecido
+      700: '#0E3A6A',    // Escurecido
+      800: '#0A2A5A',    // Escurecido
+      900: '#051A4A',    // Escurecido
     },
     
-    // Neutros com fundo branco
+    // Neutros com melhor contraste para acessibilidade
     gray: {
       50: '#F9FAFB',
       100: '#F3F4F6',
       200: '#E5E7EB',
       300: '#D1D5DB',
-      400: '#9CA3AF',
-      500: '#6B7280',
-      600: '#4B5563',
-      700: '#374151',
-      800: '#1F2937',
-      900: '#111827',
+      400: '#6B7280',  // Melhorado para contraste
+      500: '#4B5563',  // Melhorado para contraste
+      600: '#374151',  // Melhorado para contraste
+      700: '#1F2937',
+      800: '#111827',
+      900: '#000000',  // Preto puro para máximo contraste
     }
   },
   
@@ -75,12 +75,12 @@ const theme = extendTheme({
     '2xl': '1536px'   // Extra large
   },
   
-  // Configuração base
+  // Configuração base com contraste melhorado
   styles: {
     global: {
       body: {
         bg: 'white',
-        color: 'gray.800',
+        color: 'gray.800',  // Cor mais escura para melhor contraste
         fontFeatureSettings: '"kern" 1',
         textRendering: 'optimizeLegibility',
         WebkitFontSmoothing: 'antialiased',
@@ -91,6 +91,10 @@ const theme = extendTheme({
       },
       'html': {
         scrollBehavior: 'smooth',
+      },
+      // Melhor contraste para textos secundários
+      '.chakra-text': {
+        color: 'gray.700 !important',  // Força contraste adequado
       },
     },
   },
@@ -217,6 +221,15 @@ const theme = extendTheme({
     Text: {
       baseStyle: {
         lineHeight: '1.6',
+        color: 'gray.700',  // Contraste melhorado por padrão
+      },
+      variants: {
+        secondary: {
+          color: 'gray.600',  // Versão secundária com contraste adequado
+        },
+        muted: {
+          color: 'gray.700',  // Mesmo para texto "muted"
+        },
       },
     },
     

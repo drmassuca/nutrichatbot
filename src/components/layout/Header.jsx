@@ -145,7 +145,7 @@ const Header = () => {
           <HStack spacing={3} display={{ base: 'none', md: 'flex' }}>
             <Button
               as="a"
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/552799669520"
               target="_blank"
               rel="noopener noreferrer"
               leftIcon={<FaWhatsapp />}
@@ -257,7 +257,7 @@ const Header = () => {
               <VStack spacing={3} p={4} bg="gray.50">
                 <Button
                   as="a"
-                  href="https://wa.me/5511999999999"
+                  href="https://wa.me/552799669520"
                   target="_blank"
                   rel="noopener noreferrer"
                   leftIcon={<FaWhatsapp />}

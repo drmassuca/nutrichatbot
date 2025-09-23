@@ -344,7 +344,7 @@ const Contato = () => {
       icon: FaWhatsapp,
       title: "WhatsApp Direto",
       description: "Resposta imediata via WhatsApp para dúvidas rápidas e demonstrações ao vivo",
-      action: () => window.open('https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre o Nutri ChatBot', '_blank'),
+      action: () => window.open('https://wa.me/552799669520?text=Olá! Gostaria de saber mais sobre o Nutri ChatBot', '_blank'),
       actionText: "Chamar no WhatsApp"
     },
     {
@@ -358,14 +358,14 @@ const Contato = () => {
       icon: FaHeadset,
       title: "Suporte Técnico",
       description: "Central de ajuda para clientes ativos com suporte técnico especializado",
-      action: () => window.open('https://wa.me/5511999999999?text=Preciso de suporte técnico', '_blank'),
+      action: () => window.open('https://wa.me/552799669520?text=Preciso de suporte técnico', '_blank'),
       actionText: "Solicitar suporte"
     },
     {
       icon: FaUsers,
       title: "Vendas Enterprise",
       description: "Soluções customizadas para clínicas e redes com múltiplos profissionais",
-      action: () => window.open('https://wa.me/5511999999999?text=Interessado em soluções Enterprise', '_blank'),
+      action: () => window.open('https://wa.me/552799669520?text=Interessado em soluções Enterprise', '_blank'),
       actionText: "Falar com vendas"
     }
   ];
@@ -452,7 +452,7 @@ const Contato = () => {
               <HStack spacing={4} flexWrap="wrap">
                 <Button
                   as="a"
-                  href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre o Nutri ChatBot"
+                  href="https://wa.me/552799669520?text=Olá! Gostaria de saber mais sobre o Nutri ChatBot"
                   target="_blank"
                   rel="noopener noreferrer"
                   leftIcon={<FaWhatsapp />}
@@ -462,18 +462,6 @@ const Contato = () => {
                   _hover={{ transform: 'translateY(-2px)' }}
                 >
                   WhatsApp direto
-                </Button>
-                <Button
-                  as="a"
-                  href="tel:+5511999999999"
-                  leftIcon={<FaPhone />}
-                  variant="outline"
-                  colorScheme="brand"
-                  size="lg"
-                  px={6}
-                  _hover={{ transform: 'translateY(-2px)' }}
-                >
-                  Ligar agora
                 </Button>
               </HStack>
             </MotionStack>
@@ -679,7 +667,7 @@ const Contato = () => {
             
             <Button
               as="a"
-              href="https://wa.me/5511999999999?text=Preciso de ajuda urgente com o Nutri ChatBot"
+              href="https://wa.me/552799669520?text=Preciso de ajuda urgente com o Nutri ChatBot"
               target="_blank"
               rel="noopener noreferrer"
               leftIcon={<FaWhatsapp />}

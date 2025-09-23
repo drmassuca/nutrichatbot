@@ -88,38 +88,7 @@ const WhatsAppFloatButton = ({ messageType = 'default', customMessage = null }) 
         </Button>
       </Tooltip>
 
-      {/* Indicador de mensagem - aparece depois de 3 segundos */}
-      <MotionBox
-        position="absolute"
-        top="-8px"
-        right="-8px"
-        w="20px"
-        h="20px"
-        bg="red.500"
-        borderRadius="full"
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-        border="2px solid white"
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.3, delay: display.notificationDelay / 1000 }}
-      >
-        <Box
-          w="8px"
-          h="8px"
-          bg="white"
-          borderRadius="full"
-          sx={{
-            '@keyframes notificationPulse': {
-              '0%': { transform: 'scale(1)' },
-              '50%': { transform: 'scale(1.2)' },
-              '100%': { transform: 'scale(1)' },
-            },
-            animation: 'notificationPulse 1.5s infinite',
-          }}
-        />
-      </MotionBox>
+
 
       {/* Texto de call-to-action que aparece temporariamente */}
       <MotionBox

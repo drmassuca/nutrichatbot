@@ -1,7 +1,7 @@
 // Configurações centralizadas para WhatsApp
 export const WHATSAPP_CONFIG = {
   // Número de telefone (formato internacional sem + e espaços)
-  phoneNumber: '5511999999999', // Substitua pelo número real
+  phoneNumber: '552799669520', // Número institucional
   
   // Mensagens pré-definidas para diferentes contextos
   messages: {

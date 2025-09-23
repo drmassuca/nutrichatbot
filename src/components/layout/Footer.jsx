@@ -13,7 +13,7 @@ import {
   VStack,
   Divider,
 } from '@chakra-ui/react';
-import { FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { Link as RouterLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
@@ -58,7 +58,7 @@ const Footer = () => {
     <Box bg={bg} borderTop="1px" borderColor={borderColor}>
       <Container as={Stack} maxW="1200px" py={10}>
         <SimpleGrid
-          templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr' }}
+          templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr' }}
           spacing={8}
         >
           {/* Logo e Descrição */}
@@ -84,10 +84,7 @@ const Footer = () => {
               <SocialButton label="Instagram" href="https://instagram.com/nutrichatbot">
                 <FaInstagram />
               </SocialButton>
-              <SocialButton label="LinkedIn" href="https://linkedin.com/company/nutrichatbot">
-                <FaLinkedin />
-              </SocialButton>
-              <SocialButton label="WhatsApp" href="https://wa.me/5511999999999">
+              <SocialButton label="WhatsApp" href="https://wa.me/552799669520">
                 <FaWhatsapp />
               </SocialButton>
             </Stack>
@@ -107,28 +104,6 @@ const Footer = () => {
             <Link as={RouterLink} to="/precos" fontSize="sm" color="gray.600" _hover={{ color: 'brand.500' }}>
               Preços
             </Link>
-            <Link as={RouterLink} to="/demo" fontSize="sm" color="gray.600" _hover={{ color: 'brand.500' }}>
-              Demo Gratuita
-            </Link>
-          </Stack>
-
-          {/* Empresa */}
-          <Stack align="flex-start">
-            <Text fontWeight="600" fontSize="md" mb={2}>
-              Empresa
-            </Text>
-            <Link as={RouterLink} to="/sobre" fontSize="sm" color="gray.600" _hover={{ color: 'brand.500' }}>
-              Sobre Nós
-            </Link>
-            <Link as={RouterLink} to="/contato" fontSize="sm" color="gray.600" _hover={{ color: 'brand.500' }}>
-              Contato
-            </Link>
-            <Link href="/blog" fontSize="sm" color="gray.600" _hover={{ color: 'brand.500' }}>
-              Blog
-            </Link>
-            <Link href="/carreiras" fontSize="sm" color="gray.600" _hover={{ color: 'brand.500' }}>
-              Carreiras
-            </Link>
           </Stack>
 
           {/* Suporte */}
@@ -136,17 +111,11 @@ const Footer = () => {
             <Text fontWeight="600" fontSize="md" mb={2}>
               Suporte
             </Text>
-            <Link href="/ajuda" fontSize="sm" color="gray.600" _hover={{ color: 'brand.500' }}>
-              Central de Ajuda
-            </Link>
-            <Link href="/termos" fontSize="sm" color="gray.600" _hover={{ color: 'brand.500' }}>
-              Termos de Uso
-            </Link>
-            <Link href="/privacidade" fontSize="sm" color="gray.600" _hover={{ color: 'brand.500' }}>
-              Privacidade
+            <Link as={RouterLink} to="/contato" fontSize="sm" color="gray.600" _hover={{ color: 'brand.500' }}>
+              Contato
             </Link>
             <Link 
-              href="https://wa.me/5511999999999" 
+              href="https://wa.me/552799669520" 
               fontSize="sm" 
               color="gray.600" 
               _hover={{ color: 'brand.500' }}

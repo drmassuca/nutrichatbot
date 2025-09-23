@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import Layout from './components/layout/Layout';
+import ScrollToTop from './components/common/ScrollToTop';
 import Home from './pages/Home';
 import About from './pages/About';
 import Funcionalidades from './pages/Funcionalidades';
@@ -21,6 +22,9 @@ function App() {
       <NutriChatBotAppSchema />
       <OrganizationSchema />
       <ServiceSchema />
+      
+      {/* Scroll to top on route change */}
+      <ScrollToTop />
       
       <Layout>
         <Routes>
