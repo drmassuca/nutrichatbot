@@ -25,16 +25,13 @@ import {
 } from '@chakra-ui/react';
 import { 
   FaWhatsapp, 
-  FaEnvelope, 
-  FaPhone,
   FaClock,
   FaUsers,
   FaQuestionCircle,
   FaRocket,
   FaHeadset,
   FaComments,
-  FaCalendarAlt,
-  FaGlobe
+  FaCalendarAlt
 } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
@@ -489,31 +486,7 @@ const Contato = () => {
                         WhatsApp
                       </Text>
                       <Text fontSize="sm" color="gray.600">
-                        (11) 99999-9999
-                      </Text>
-                    </VStack>
-                  </HStack>
-                  
-                  <HStack spacing={4} w="full">
-                    <Icon as={FaEnvelope} color="tech.500" w={6} h={6} />
-                    <VStack spacing={0} align="start">
-                      <Text fontWeight="600" color="gray.800">
-                        E-mail
-                      </Text>
-                      <Text fontSize="sm" color="gray.600">
-                        contato@nutrichatbot.com.br
-                      </Text>
-                    </VStack>
-                  </HStack>
-                  
-                  <HStack spacing={4} w="full">
-                    <Icon as={FaGlobe} color="brand.500" w={6} h={6} />
-                    <VStack spacing={0} align="start">
-                      <Text fontWeight="600" color="gray.800">
-                        Website
-                      </Text>
-                      <Text fontSize="sm" color="gray.600">
-                        www.nutrichatbot.com.br
+                        (27) 99669-2520
                       </Text>
                     </VStack>
                   </HStack>

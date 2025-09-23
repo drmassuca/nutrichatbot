@@ -113,7 +113,11 @@ const Home = () => {
                 color="gray.900"
                 fontWeight="700"
               >
-                A sua versão{' '}
+                O{' '}
+                <Text as="span" color="brand.500">
+                  NutriChatBot
+                </Text>
+                {' '}é a sua versão{' '}
                 <Text as="span" color="brand.500">
                   nutricionista virtual
                 </Text>
@@ -126,7 +130,7 @@ const Home = () => {
                 maxW="500px"
                 lineHeight="1.6"
               >
-                O Nutri ChatBot é um assistente nutricional inteligente que realiza 
+                Um assistente nutricional inteligente que realiza 
                 a triagem completa dos seus pacientes antes da consulta, organiza os 
                 dados em um prontuário digital e acompanha a rotina alimentar 24h por dia, 
                 direto no WhatsApp.
