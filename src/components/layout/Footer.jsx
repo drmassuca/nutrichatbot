@@ -67,8 +67,11 @@ const Footer = () => {
               <Image
                 src="/images/logoicon.webp"
                 alt="Nutri ChatBot"
+                width="40px"
+                height="40px"
                 h="40px"
                 w="auto"
+                loading="eager"
                 fallback={
                   <Text fontSize="lg" fontWeight="bold" color="brand.500">
                     Nutri ChatBot
@@ -84,7 +87,7 @@ const Footer = () => {
               <SocialButton label="Instagram" href="https://instagram.com/nutrichatbot">
                 <FaInstagram />
               </SocialButton>
-              <SocialButton label="WhatsApp" href="https://wa.me/552799669520">
+              <SocialButton label="WhatsApp" href="https://wa.me/5527996692520">
                 <FaWhatsapp />
               </SocialButton>
             </Stack>
@@ -115,7 +118,7 @@ const Footer = () => {
               Contato
             </Link>
             <Link 
-              href="https://wa.me/552799669520" 
+              href="https://wa.me/5527996692520" 
               fontSize="sm" 
               color="gray.600" 
               _hover={{ color: 'brand.500' }}

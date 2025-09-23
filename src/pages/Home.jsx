@@ -30,7 +30,7 @@ const FeatureCard = ({ icon, title, description, delay = 0 }) => {
     <MotionBox
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay }}
+      transition={{ duration: 0.3, delay }} // Reduzido de 0.5
       bg={bg}
       p={6}
       rounded="xl"
@@ -41,7 +41,7 @@ const FeatureCard = ({ icon, title, description, delay = 0 }) => {
         boxShadow: 'xl',
       }}
       sx={{
-        transition: 'all 0.3s ease',
+        transition: 'all 0.2s ease', // Reduzido de 0.3s
       }}
     >
       <VStack spacing={4}>
@@ -104,7 +104,7 @@ const Home = () => {
               spacing={6}
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+              transition={{ duration: 0.4 }} // Reduzido de 0.8 para 0.4
             >
               <Heading
                 as="h1"
@@ -162,7 +162,7 @@ const Home = () => {
                 </Button>
                 <Button
                   as="a"
-                  href={generateWhatsAppUrl('home')}
+                  href={generateWhatsAppUrl('demo_home')}
                   target="_blank"
                   rel="noopener noreferrer"
                   size="lg"
@@ -211,17 +211,20 @@ const Home = () => {
             <MotionBox
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.1 }} // Reduzido delay
               display="flex"
               justifyContent="center"
             >
               <Image
                 src="/images/mockup.webp"
                 alt="Nutri ChatBot WhatsApp Interface"
+                width="400px"
+                height="600px"
                 maxW="400px"
                 w="full"
                 h="auto"
                 objectFit="contain"
+                loading="eager"
                 fallback={
                   <Box
                     w="300px"
@@ -236,7 +239,7 @@ const Home = () => {
                   >
                     <FaWhatsapp size="60px" color="#25D366" />
                     <Text color="gray.600" textAlign="center" px={4}>
-                      Mockup do WhatsApp com Nutri ChatBot em ação
+                      Mockup do WhatsApp com NutriChatBot em ação
                     </Text>
                   </Box>
                 }
@@ -256,11 +259,11 @@ const Home = () => {
               textAlign="center"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.3 }} // Reduzido de 0.6
               viewport={{ once: true }}
             >
               <Heading size="2xl" color="gray.900">
-                Por que escolher o Nutri ChatBot?
+                Por que escolher o NutriChatBot?
               </Heading>
               <Text fontSize="xl" color="gray.600" maxW="600px">
                 Uma solução completa que revoluciona a forma como você atende seus pacientes
@@ -388,7 +391,7 @@ const Home = () => {
               Pronto para revolucionar seus atendimentos?
             </Heading>
             <Text fontSize="xl" maxW="600px" mx="auto" opacity={0.9}>
-              Junte-se a centenas de nutricionistas que já otimizaram suas consultas com o Nutri ChatBot
+              Junte-se a centenas de nutricionistas que já otimizaram suas consultas com o NutriChatBot
             </Text>
             <HStack spacing={4} justify="center" flexWrap="wrap">
               <Button

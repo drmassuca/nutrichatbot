@@ -1,39 +1,51 @@
 // Configurações centralizadas para WhatsApp
 export const WHATSAPP_CONFIG = {
   // Número de telefone (formato internacional sem + e espaços)
-  phoneNumber: '552799669520', // Número institucional
+  phoneNumber: '5527996692520', // Número institucional CORRETO
   
   // Mensagens pré-definidas para diferentes contextos
   messages: {
     // Mensagem padrão do botão flutuante
-    default: 'Olá! 👋 Gostaria de conhecer o Nutri ChatBot e saber como posso otimizar meus atendimentos nutricionais com IA. Pode me ajudar?',
+    default: 'Olá! 👋 Gostaria de conhecer o NutriChatBot e saber como posso otimizar meus atendimentos nutricionais com IA. Pode me ajudar?',
     
-    // Mensagem da página inicial
-    home: 'Olá! 👋 Vim através do site e gostaria de conhecer melhor o Nutri ChatBot. Pode me explicar como funciona?',
+    // Mensagem da página inicial - Hero
+    home: 'Olá! 👋 Vim através do site e gostaria de conhecer melhor o NutriChatBot. Pode me explicar como funciona?',
+    
+    // Mensagem da página inicial - Demonstração
+    demo_home: 'Olá! 👋 Vi o site do NutriChatBot e gostaria de agendar uma demonstração gratuita. Quando podemos conversar?',
     
     // Mensagem da página sobre
-    about: 'Olá! Acabei de conhecer a história da empresa na página Sobre e fiquei interessado no Nutri ChatBot. Podem me ajudar?',
+    about: 'Olá! Acabei de conhecer a história da empresa na página Sobre e fiquei interessado no NutriChatBot. Podem me ajudar?',
     
     // Mensagem da página de funcionalidades
-    features: 'Olá! Vi as funcionalidades do Nutri ChatBot e gostaria de saber mais detalhes sobre como implementar na minha prática.',
+    features: 'Olá! Vi as funcionalidades do NutriChatBot e gostaria de saber mais detalhes sobre como implementar na minha prática nutricional.',
     
     // Mensagem da página de preços
-    pricing: 'Olá! Estou interessado nos planos do Nutri ChatBot. Podem me explicar qual seria o melhor para meu consultório?',
+    pricing: 'Olá! Estou interessado nos planos do NutriChatBot por R$49,90/mês. Podem me explicar qual seria o melhor para meu consultório?',
     
     // Mensagem da página de benefícios
-    benefits: 'Olá! Fiquei impressionado com os benefícios do Nutri ChatBot. Gostaria de agendar uma demonstração.',
+    benefits: 'Olá! Fiquei impressionado com os benefícios do NutriChatBot (economia de 40min por consulta). Gostaria de agendar uma demonstração!',
     
-    // Mensagem da página de contato
-    contact: 'Olá! Estou entrando em contato através do site para conhecer melhor o Nutri ChatBot.',
+    // Mensagem da página de contato - Geral
+    contact: 'Olá! Estou entrando em contato através do site para conhecer melhor o NutriChatBot e receber uma proposta.',
+    
+    // Mensagem da página de contato - Direto
+    contact_direct: 'Olá! 👋 Vim da página de contato e gostaria de conversar sobre o NutriChatBot. Estão disponíveis agora?',
     
     // Mensagem para demonstração
-    demo: 'Olá! Gostaria de agendar uma demonstração do Nutri ChatBot para conhecer na prática como funciona.',
+    demo: 'Olá! Gostaria de agendar uma demonstração do NutriChatBot para conhecer na prática como funciona. Qual o melhor horário?',
     
-    // Mensagem para suporte
-    support: 'Olá! Preciso de suporte técnico com o Nutri ChatBot. Podem me ajudar?',
+    // Mensagem para suporte técnico
+    support: 'Olá! Preciso de suporte técnico com o NutriChatBot. Podem me ajudar com algumas questões?',
+    
+    // Mensagem para vendas enterprise
+    enterprise: 'Olá! Tenho uma clínica com múltiplos profissionais e gostaria de conhecer as soluções Enterprise do NutriChatBot.',
+    
+    // Mensagem para emergência
+    emergency: 'Olá! Preciso de ajuda urgente com o NutriChatBot. É possível me atender agora?',
     
     // Mensagem para dúvidas técnicas
-    technical: 'Olá! Tenho algumas dúvidas técnicas sobre a implementação do Nutri ChatBot. Podem me orientar?'
+    technical: 'Olá! Tenho algumas dúvidas técnicas sobre a implementação do NutriChatBot. Podem me orientar?'
   },
   
   // Configurações de exibição

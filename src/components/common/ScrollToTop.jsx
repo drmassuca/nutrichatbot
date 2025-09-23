@@ -9,7 +9,7 @@ const ScrollToTop = () => {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: 'smooth' // Scroll suave
+      behavior: 'auto' // Mudado de 'smooth' para 'auto' para ser instantâneo
     });
   }, [pathname]);
 

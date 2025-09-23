@@ -237,7 +237,7 @@ const ContactForm = () => {
                 name="telefone"
                 value={formData.telefone}
                 onChange={handleChange}
-                placeholder="(27) 99999-9999"
+                placeholder="(11) 99999-9999"
                 size="lg"
               />
             </FormControl>
@@ -342,28 +342,28 @@ const Contato = () => {
       icon: FaWhatsapp,
       title: "WhatsApp Direto",
       description: "Resposta imediata via WhatsApp para dúvidas rápidas e demonstrações ao vivo",
-      action: () => window.open(generateWhatsAppUrl('contact_direct'), '_blank'),
+      action: () => window.open('https://wa.me/552799669520?text=Olá! Gostaria de saber mais sobre o Nutri ChatBot', '_blank'),
       actionText: "Chamar no WhatsApp"
     },
     {
       icon: FaCalendarAlt,
       title: "Agendar Demonstração",
       description: "Demonstração personalizada de 30 minutos com nosso especialista em nutrição digital",
-      action: () => window.open(generateWhatsAppUrl('demo'), '_blank'),
+      action: () => window.open('/demo', '_blank'),
       actionText: "Agendar demo"
     },
     {
       icon: FaHeadset,
       title: "Suporte Técnico",
       description: "Central de ajuda para clientes ativos com suporte técnico especializado",
-      action: () => window.open(generateWhatsAppUrl('support'), '_blank'),
+      action: () => window.open('https://wa.me/552799669520?text=Preciso de suporte técnico', '_blank'),
       actionText: "Solicitar suporte"
     },
     {
       icon: FaUsers,
       title: "Vendas Enterprise",
       description: "Soluções customizadas para clínicas e redes com múltiplos profissionais",
-      action: () => window.open(generateWhatsAppUrl('enterprise'), '_blank'),
+      action: () => window.open('https://wa.me/552799669520?text=Interessado em soluções Enterprise', '_blank'),
       actionText: "Falar com vendas"
     }
   ];
@@ -377,8 +377,8 @@ const Contato = () => {
   return (
     <>
       <SEO 
-        title="Contato - NutriChatBot | Fale Conosco via WhatsApp"
-        description="Entre em contato com o NutriChatBot: WhatsApp (27) 99669-2520, demonstração gratuita, suporte técnico especializado. Respondemos em até 2h!"
+        title="Contato - Nutri ChatBot | Fale Conosco via WhatsApp"
+        description="Entre em contato com o Nutri ChatBot: WhatsApp (11) 99999-9999, demonstração gratuita, suporte técnico especializado. Respondemos em até 2h!"
         keywords="contato nutri chatbot, suporte nutricional, whatsapp nutricionista, demonstração chatbot, vendas enterprise"
         url="/contato"
       />
@@ -450,7 +450,7 @@ const Contato = () => {
               <HStack spacing={4} flexWrap="wrap">
                 <Button
                   as="a"
-                  href={generateWhatsAppUrl('contact_direct')}
+                  href="https://wa.me/552799669520?text=Olá! Gostaria de saber mais sobre o Nutri ChatBot"
                   target="_blank"
                   rel="noopener noreferrer"
                   leftIcon={<FaWhatsapp />}
@@ -641,7 +641,7 @@ const Contato = () => {
             
             <Button
               as="a"
-              href={generateWhatsAppUrl('emergency')}
+              href="https://wa.me/552799669520?text=Preciso de ajuda urgente com o Nutri ChatBot"
               target="_blank"
               rel="noopener noreferrer"
               leftIcon={<FaWhatsapp />}

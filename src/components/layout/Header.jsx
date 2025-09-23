@@ -93,8 +93,11 @@ const Header = () => {
               <Image
                 src="/images/logoicon.webp"
                 alt="Nutri ChatBot"
+                width="40px"
+                height="40px"
                 h="40px"
                 w="auto"
+                loading="eager"
                 fallback={
                   <Box 
                     w="40px" 
@@ -145,7 +148,7 @@ const Header = () => {
           <HStack spacing={3} display={{ base: 'none', md: 'flex' }}>
             <Button
               as="a"
-              href="https://wa.me/552799669520"
+              href="https://wa.me/5527996692520"
               target="_blank"
               rel="noopener noreferrer"
               leftIcon={<FaWhatsapp />}
@@ -195,11 +198,14 @@ const Header = () => {
             <Box p={4} borderBottom="1px" borderColor="gray.100">
               <Flex alignItems="center" gap={3} justify="center">
                 <Image
-                  src="/images/logoicon.webp"
-                  alt="Nutri ChatBot"
-                  h="32px"
-                  w="auto"
-                  fallback={
+                src="/images/logoicon.webp"
+                alt="Nutri ChatBot"
+                width="32px"
+                height="32px"
+                h="32px"
+                w="auto"
+                loading="eager"
+                fallback={
                     <Box 
                       w="32px" 
                       h="32px" 
@@ -257,7 +263,7 @@ const Header = () => {
               <VStack spacing={3} p={4} bg="gray.50">
                 <Button
                   as="a"
-                  href="https://wa.me/552799669520"
+                  href="https://wa.me/5527996692520"
                   target="_blank"
                   rel="noopener noreferrer"
                   leftIcon={<FaWhatsapp />}
