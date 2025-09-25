@@ -7,6 +7,7 @@ import Funcionalidades from './pages/Funcionalidades';
 import Beneficios from './pages/Beneficios';
 import Precos from './pages/Precos';
 import Contato from './pages/Contato';
+import PoliticasPrivacidade from './pages/PoliticasPrivacidade';
 
 // SEO Schema Components
 import { 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/beneficios" element={<Beneficios />} />
           <Route path="/precos" element={<Precos />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/politicas-privacidade" element={<PoliticasPrivacidade />} />
         </Routes>
       </Layout>
     </>

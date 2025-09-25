@@ -482,30 +482,24 @@ const About = () => {
             </MotionStack>
 
             {/* Cards da Equipe */}
-            <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={8} w="full">
+            <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={8} w="full" maxW="1000px" mx="auto">
               <TeamCard
-                name="Dr. Ana Silva"
-                role="CRN-3 12345/P - CEO & Fundadora"
-                description="Nutricionista com 15 anos de experiência e especialização em tecnologia aplicada à nutrição. Visionária por trás do Nutri ChatBot."
+                name="Daniel Lessa"
+                role="CEO & Fundador"
+                description="Profissional com mais de 15 anos de experiência em Nutrição, integra a Equipe de Expansão Global de uma multinacional líder no setor. Nutricionista em formação, identificou as principais dificuldades durante o curso relacionadas à otimização das fases de Avaliação Nutricional, sendo essa visão fundamental para o desenvolvimento das soluções do NutriChatBot."
                 delay={0.1}
               />
               <TeamCard
-                name="Carlos Santos"
-                role="CTO & Desenvolvedor Sênior"
-                description="Especialista em IA e Machine Learning com 12 anos de experiência em desenvolvimento de soluções para área da saúde."
+                name="Vicente Zippinotti"
+                role="CTO & Estrategista de Inovação"
+                description="Desenvolvedor estratégico com expertise em tecnologia e inteligência artificial. Possui habilidade única em desenvolver soluções estratégicas que integram tecnologia avançada e IA, trazendo uma abordagem contemporânea e impactante para todos os projetos em que atua."
                 delay={0.2}
               />
               <TeamCard
-                name="Mariana Costa"
-                role="CRN-3 54321/P - Head de Produto"
-                description="Nutricionista especializada em tecnologia e UX, responsável por garantir que nossas soluções atendam às necessidades reais dos profissionais."
+                name="Seiti Katsumi"
+                role="CTO & Especialista em IA"
+                description="Empreendedor visionário com mais de duas décadas de experiência internacional. Foi responsável pela fundação da maior agência brasileira de comunicação no Japão, onde viveu por 17 anos. Especialista em Inteligência Artificial, CRM e Automações de Marketing com projetos de escala nacional e internacional."
                 delay={0.3}
-              />
-              <TeamCard
-                name="Rafael Lima"
-                role="Especialista em IA"
-                description="PhD em Inteligência Artificial aplicada à saúde, lidera o desenvolvimento dos algoritmos de triagem e análise nutricional."
-                delay={0.4}
               />
             </SimpleGrid>
           </VStack>

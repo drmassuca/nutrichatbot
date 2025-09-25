@@ -146,8 +146,8 @@ const PricingCard = ({
 
             {/* CTA */}
             <Button
-              as={RouterLink}
-              to="/contato"
+              as="a"
+              href="https://app.nutrichatbot.com.br"
               colorScheme={isPopular ? "brand" : "gray"}
               variant={ctaVariant}
               size="lg"

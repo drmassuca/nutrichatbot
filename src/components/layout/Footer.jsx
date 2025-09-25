@@ -127,6 +127,9 @@ const Footer = () => {
             >
               Suporte WhatsApp
             </Link>
+            <Link as={RouterLink} to="/politicas-privacidade" fontSize="sm" color="gray.600" _hover={{ color: 'brand.500' }}>
+              Políticas de Privacidade
+            </Link>
           </Stack>
         </SimpleGrid>
 

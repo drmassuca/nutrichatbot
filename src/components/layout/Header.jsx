@@ -160,14 +160,18 @@ const Header = () => {
               WhatsApp
             </Button>
             <Button
-              as={RouterLink}
-              to="/contato"
+              as="a"
+              href="https://app.nutrichatbot.com.br/login"
               variant="solid"
               size="sm"
-              colorScheme="brand"
-              _hover={{ transform: 'translateY(-1px)' }}
+              bg="tech.500"
+              color="white"
+              _hover={{ 
+                transform: 'translateY(-1px)',
+                bg: 'tech.600'
+              }}
             >
-              Solicitar Demo
+              Acessar Plataforma
             </Button>
           </HStack>
 
@@ -176,9 +180,11 @@ const Header = () => {
             size="md"
             icon={isOpen ? <HiX /> : <HiMenu />}
             aria-label="Abrir Menu"
-            display={{ base: 'flex', lg: 'none' }}
+            display={{ base: 'flex', md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
             variant="ghost"
+            color="gray.600"
+            _hover={{ bg: 'gray.100', color: 'gray.800' }}
           />
         </Flex>
       </Container>
@@ -270,20 +276,26 @@ const Header = () => {
                   variant="outline"
                   colorScheme="brand"
                   w="full"
-                  size="lg"
+                  size="md"
+                  fontSize="sm"
                 >
                   WhatsApp
                 </Button>
                 <Button
-                  as={RouterLink}
-                  to="/contato"
+                  as="a"
+                  href="https://app.nutrichatbot.com.br/login"
                   variant="solid"
-                  colorScheme="brand"
+                  bg="tech.500"
+                  color="white"
                   w="full"
-                  size="lg"
+                  size="md"
+                  fontSize="sm"
                   onClick={onClose}
+                  _hover={{ 
+                    bg: 'tech.600'
+                  }}
                 >
-                  Solicitar Demo
+                  Acessar Plataforma
                 </Button>
               </VStack>
             </VStack>
