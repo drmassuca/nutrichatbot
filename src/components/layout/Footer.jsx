@@ -87,7 +87,7 @@ const Footer = () => {
               <SocialButton label="Instagram" href="https://instagram.com/nutrichatbot">
                 <FaInstagram />
               </SocialButton>
-              <SocialButton label="WhatsApp" href="https://wa.me/5527996692520">
+              <SocialButton label="WhatsApp" href="https://wa.me/5527999142520">
                 <FaWhatsapp />
               </SocialButton>
             </Stack>
@@ -118,7 +118,7 @@ const Footer = () => {
               Contato
             </Link>
             <Link 
-              href="https://wa.me/5527996692520" 
+              href="https://wa.me/5527999142520" 
               fontSize="sm" 
               color="gray.600" 
               _hover={{ color: 'brand.500' }}

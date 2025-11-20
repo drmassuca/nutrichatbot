@@ -357,7 +357,7 @@ const Precos = () => {
         "Múltiplos nutricionistas na mesma conta",
         "Dashboard administrativo completo",
         "API para integrações customizadas",
-        "White label (sua marca)",
+        "Disparo automático de mensagens",
         "Treinamento personalizado",
         "Suporte dedicado 24/7",
         "SLA garantido 99.9%",
